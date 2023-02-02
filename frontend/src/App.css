@@ -1,7 +1,57 @@
 .App {
   width: 100vw;
   height: 100vh;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.canva {
+  padding: 0.1rem;
+  border: 12px solid #549f93;
+  border-radius: 4%;
+  background-color: white;
+}
+
+.colors {
+  width: 50%;
+  /* border-radius: 20%; */
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 0.6rem;
+  background-color: white;
+  border: 5px solid #258ea6;
+  align-items: center;
+}
+
+.colors .circle-picker {
+  width: 100% !important;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  /* border-radius: 7%; */
+  font-size: 2rem;
+  background-color: white;
+  border: 5px solid #258ea6;
+  padding: 1rem 5rem;
+  color: #258ea6;
+}
+
+button:active {
+  border: 5px solid #549f93;
+  color: #549f93;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.colors-and-buttons {
+  margin-top: -400px;
+  display: flex;
+  justify-content: space-between;
 }

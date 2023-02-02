@@ -1,10 +1,10 @@
 import { useOnDraw } from "./Hooks";
 
-const Canvas = ({ width, height }) => {
+const Canvas = ({ width, height, color }) => {
   const { onMouseDown, setCanvasRef } = useOnDraw(onDraw);
 
   function onDraw(ctx, point, prevPoint) {
-    drawLine(prevPoint, point, ctx, "#000000", 5);
+    drawLine(prevPoint, point, ctx, color, 5);
   }
 
   function drawLine(start, end, ctx, color, width) {
@@ -27,12 +27,10 @@ const Canvas = ({ width, height }) => {
       width={width}
       height={height}
       onMouseDown={onMouseDown}
-      style={canvasStyle}
       ref={setCanvasRef}
+      id="canvas"
     />
   );
 };
 
 export default Canvas;
-
-const canvasStyle = { border: "1px solid black" };

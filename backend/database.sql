@@ -17,10 +17,7 @@ CREATE TABLE `user` (
 CREATE TABLE `drawing` (
     `id` int NOT NULL AUTO_INCREMENT,
     `imgName` VARCHAR(100) NOT NULL,
-    `userId` int NOT NULL,
-    PRIMARY KEY (`id`),
-    FOREIGN KEY (userId)  
-    REFERENCES user(id)
+   PRIMARY KEY (`id`)
 );
 
 -- CREATING TWO USERS
